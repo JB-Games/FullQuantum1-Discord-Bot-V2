@@ -32,7 +32,7 @@ module.exports = async (client) => {
       return Table.addRow(command.name, "❌ FAILD", "Permission Is Invalid")
     }
 
-    client.commands.set(command.name, command);
+    client.commands.set(command.name, command)
     CommandsArray.push(command);
     await Table.addRow(command.name, "✔ Successful")
 
